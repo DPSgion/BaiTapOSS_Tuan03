@@ -21,10 +21,9 @@ int ktNguyenTo(int a){
 		{
 			if(a%i==0)
 				return 0;
-			else
-				return 1;
 		}
 	}
+	return 1;
 }
 float thuong(int a, int b);
 int main()
@@ -32,7 +31,7 @@ int main()
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
 
 	int x,y;
-	cout << "Nhap so thu nhat: ";
+	cout << "\nNhap so thu nhat: ";
 	cin >> x;
 	cout << "Nhap so thu hai: ";
 	cin >> y;
@@ -40,11 +39,10 @@ int main()
 	cout << "Tong la: " << tong(x,y) << endl;
 	cout << "Hieu la: " << hieu(x,y) << endl;
 	cout << "Tich la: " << tich(x,y) << endl;
-	if(ktNguyenTo(a)==1)
-		cout<<" a la so nguyen to"<<endl;
+	if(ktNguyenTo(x)==1)
+		cout<< x << " la so nguyen to"<<endl;
 	else
-		cout<<" a khong la so nguyen to"<<endl;
+		cout<< x << " khong la so nguyen to"<<endl;
 
-	system("pause");
 	return 0;
 }
