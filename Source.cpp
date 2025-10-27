@@ -11,7 +11,7 @@ int main()
 {
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
 	cout<<"Hieu :";
-	cout<<hieu<<endl;
+	cout<< hieu(10,5) <<endl;
 	system("pause");
 	return 0;
 }
