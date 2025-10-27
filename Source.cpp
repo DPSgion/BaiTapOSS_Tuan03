@@ -29,7 +29,7 @@ int main()
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
 
 	int x,y;
-	cout << "Nhap so thu nhat: ";
+	cout << "\nNhap so thu nhat: ";
 	cin >> x;
 	cout << "Nhap so thu hai: ";
 	cin >> y;
@@ -38,11 +38,13 @@ int main()
 	cout << "Hieu la: " << hieu(x,y) << endl;
 	cout << "Tich la: " << tich(x,y) << endl;
 	cout<<"-------KIỂM TRA SỐ HOÀN THIỆN----------------";
-	cout<< "Nhập số muốn kiểm tra:";
+	cout<< "\nNhập số muốn kiểm tra:";
 	int a;
 	cin>>a;
-	if(kiemTraSoHoanThien(a))cout<<a<<"la so hoan thien";
-	else cout<<n<<"khong phai la so hoan thien"<<end;
+	if (kiemTraSoHoanThien(a))
+	    cout<<a<<"la so hoan thien";
+	else 
+	    cout << a << " khong phai la so hoan thien" << endl;
 	system("pause");
 	return 0;
 }
